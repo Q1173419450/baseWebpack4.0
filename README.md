@@ -48,3 +48,6 @@ optimization
 将有权限的 git 项目加入到 travis CI 中
 
 通过 `.travis.yml` 文件，执行一个持续集成的脚本
+
+#### 发布到 npm
+
