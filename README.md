@@ -51,3 +51,9 @@ optimization
 
 #### 发布到 npm
 
+发布版本：npm publish
+
+升级版本：
+    补丁版本：npm version patch
+    小版本：npm version minor
+    大版本：npm version major
