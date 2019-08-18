@@ -57,3 +57,36 @@ optimization
     补丁版本：npm version patch
     小版本：npm version minor
     大版本：npm version major
+
+#### git 提交格式要求
+
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+type: 某次提交类型，所有类型如下:
+
+feat：新增 feature
+fix：修复 bug
+docs：仅仅修改文档，如：README、CHANGELOG、contribute 等
+style: 仅修改了空格，格式缩进，不改变大妈逻辑
+refactor：代码重构，没有加新功能或修复bug
+perf：优化相关，如提升性能
+test：测试用例，如:单元测试、集成测试
+chore：改变构建流程，新增依赖库、工具等
+revert：回滚版本
+
+```
+npm install husky -D
+npm install conventional-changelog-cli -D
+npm install validate-commit-msg -D
+
+<!-- 提交不符合规范 -->
+"commitmsg": "validate-commit-msg",
+<!-- changelog -->
+"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+```
