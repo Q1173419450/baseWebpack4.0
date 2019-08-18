@@ -1,0 +1,1 @@
+{"processes":{"14ca8402-c9b3-41c7-8c20-99d1f58f002b":{"parent":null,"children":["409b1065-ffb6-490f-bb47-a736fd3df71a"]},"409b1065-ffb6-490f-bb47-a736fd3df71a":{"parent":"14ca8402-c9b3-41c7-8c20-99d1f58f002b","children":[]}},"files":{"C:\\workplace\\javaScriptCode\\baseWebpack\\lib\\webpack.base.js":["409b1065-ffb6-490f-bb47-a736fd3df71a"]},"externalIds":{}}
