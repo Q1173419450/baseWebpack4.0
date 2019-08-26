@@ -90,3 +90,113 @@ npm install validate-commit-msg -D
 <!-- changelog -->
 "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
 ```
+
+### 构建速度和体积优化策略
+
+#### 构建速度分析
+
+speed-measure-webpack-plugin
+
+查看每个插件的执行时间
+
+#### 体积分析
+
+webpack-bundle-analyzer
+
+查看每个文件的体积大小
+
+#### 高版本的 webpack 和 Node.js
+
+> webpack 4.0 优化
+
+for of 代替 forEach、Map 和 Set 替代了 Object、includes 替代 indexOf
+
+使用字符串替代正则
+
+#### 多进程 / 多实例构建：资源并行解析可选方案
+
+官方推荐：thread-loader
+
+社区：parallel-webpack
+     HappyPack
+
+> HappyPack
+
+原理：每次 webpack 解析一个模块，HappyPack 会将它及它的依赖分配给 worker 线程中
+
+作者不维护了
+
+当文件不够复杂的时候，可以不使用 多进程
+
+#### 多进程 / 多实例：并行压缩
+
+1、使用 parallel-uglify-plugin
+
+2、uglifyjs-webpack-plugin
+
+3、terser-webpack-plugin（支持压缩 ES6 的代码）（推荐）
+
+#### 分包加载
+
+以前的做法：使用 html-webpack-externals-plugin 进行分包，引人 CDN 文件
+
+缺点：一个基础库指定一个 CDN，当包多的时候，会比较繁琐
+
+现在：使用 DLLPlugin
+
+将分离出来的包整合成一个包
+
+```
+基础包分离
+library: [
+    'react',
+    'react-dom',
+    'redux',
+    'react-redux'
+]
+业务包分离,加一个 key
+```
+
+通过 webpack.dll.js 生成公共包，然后利用 webpack.DllReferencePlugin
+
+#### 缓存提升二次构建
+
+1、babel-loader 开启缓存
+
+2、terser-webpack-plugin
+
+3、cache-loader 或者 hard-source-webpack-plugin
+
+#### 缩小构建目标
+
+2、减少文件搜索范围
+
+优化 `resolve.modules` 配置，（减少模块搜索层级）
+
+优化 `resolve.mainFields`
+
+优化 `resolve.extensions` 配置
+
+合理使用 alias
+
+#### 图片优化
+
+基于 Node 的 imagemin 或者 tinypngAPI
+
+配置 image-webpack-loader
+
+> imagemin 优点
+
+定制选项
+
+引入很多第三方优化插件，例如pngquant
+
+可以处理多种图片格式
+
+#### tree Shaking 擦除无用的 CSS
+
+PurifyCSS: 遍历代码，识别已经用到的 CSS class
+
+使用 purgecss-webpack-plugin 和 mini-css-extract-plugin 一起使用
+
+#### polyfill

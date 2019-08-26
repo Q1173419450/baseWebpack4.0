@@ -1,0 +1,200 @@
+projectRoot
+C:\workplace\javaScriptCode\baseWebpack
+ DONE  Compiled successfully in 1937ms20:46:29
+
+{
+  "errors": [],
+  "warnings": [],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "external \"React\"",
+      "name": "external \"React\"",
+      "index": 2,
+      "index2": 1,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+      "issuerId": 4,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 4,
+          "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 1,
+      "identifier": "external \"ReactDOM\"",
+      "name": "external \"ReactDOM\"",
+      "index": 3,
+      "index2": 2,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+      "issuerId": 4,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 4,
+          "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 2,
+      "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_file-loader@4.2.0@file-loader\\dist\\cjs.js??ref--7-0!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\img\\logo.png",
+      "name": "./src/search/img/logo.png",
+      "index": 4,
+      "index2": 3,
+      "size": 63,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+      "issuerId": 4,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 4,
+          "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 3,
+      "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\index\\index.js",
+      "name": "./src/index/index.js",
+      "index": 0,
+      "index2": 0,
+      "size": 29,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 4,
+      "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+      "name": "./src/search/index.js",
+      "index": 1,
+      "index2": 6,
+      "size": 3441,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 5,
+      "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_mini-css-extract-plugin@0.7.0@mini-css-extract-plugin\\dist\\loader.js!C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_css-loader@2.1.1@css-loader\\dist\\cjs.js!C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_less-loader@5.0.0@less-loader\\dist\\cjs.js!C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_postcss-loader@3.0.0@postcss-loader\\src\\index.js??ref--6-3!C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_px2rem-loader@0.1.9@px2rem-loader\\index.js??ref--6-4!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\css\\search.less",
+      "name": "./src/search/css/search.less",
+      "index": 5,
+      "index2": 5,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+      "issuerId": 4,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 4,
+          "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 6,
+      "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\test.js",
+      "name": "./src/search/test.js",
+      "index": 7,
+      "index2": 7,
+      "size": 126,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+      "issuerId": 4,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 4,
+          "identifier": "C:\\workplace\\javaScriptCode\\baseWebpack\\node_modules\\_babel-loader@8.0.6@babel-loader\\lib\\index.js!C:\\workplace\\javaScriptCode\\baseWebpack\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "filteredModules": 1,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  }
+}
